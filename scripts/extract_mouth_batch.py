@@ -13,6 +13,9 @@ Example:
 
     Will make directory TARGET and process everything inside evaluation/samples/GRID/ that match pattern *.mpg.
 '''
+import os
+import sys
+sys.path.insert(1, os.path.abspath(os.path.join(os.curdir, os.pardir)))
 
 from lipnet.lipreading.videos import Video
 import os, fnmatch, sys, errno  
